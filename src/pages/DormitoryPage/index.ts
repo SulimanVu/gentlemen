@@ -1,0 +1,1 @@
+import { DormitoryPage } from './ui/DormitoryPage';

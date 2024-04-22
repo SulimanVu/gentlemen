@@ -1,0 +1,35 @@
+@import "../../index.scss";
+
+.window {
+  margin: auto;
+  width: 70%;
+  background-color: $b-green;
+  border-radius: 10px;
+  padding: 1px 20px 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: .8s;
+  &:hover {
+    background-color: rgba(12, 59, 46, 0.8);
+  }
+  h1 {
+    span {
+      font-size: 25px;
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+  button {
+    background-color: $yellow;
+    padding: 6px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+      background-color: red;
+      color: #fff;
+    }
+  }
+}
