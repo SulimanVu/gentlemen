@@ -15,16 +15,20 @@ interface NewsCardProps {
 export const NewsCard: React.FC<NewsCardProps> = (props) => (
   <Card
     style={{ width: 300 }}
-    cover={<img alt="example" src={props.img ? `http://localhost:3010/${props.img[0]}` : ''} />}
-    actions={[
-      <EditOutlined key="edit" />,
-      <span>{props.reviews?.length}</span>
-    ]}
+    cover={
+      <img
+        alt="example"
+        src={props.img ? `https://gentlemen-back.onrender.com/${props.img[0]}` : ''}
+      />
+    }
+    actions={[<EditOutlined key="edit" />, <span>{props.reviews?.length}</span>]}
   >
     <Meta
       title={props.title}
       description={
-        props.descriptions.length > 300 ? `${props.descriptions.slice(0, 180)}...` : props.descriptions
+        props.descriptions.length > 300
+          ? `${props.descriptions.slice(0, 180)}...`
+          : props.descriptions
       }
     />
   </Card>

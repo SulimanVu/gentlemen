@@ -22,7 +22,7 @@ export const UniversityCards = () => {
           siteUrl={item.siteUrl || ''}
           email={item.email || ''}
           // users={item.users || ''}
-          backgroundImage={item.image && `http://localhost:3010/${item.image[0]}`}
+          backgroundImage={item.image && `https://gentlemen-back.onrender.com/${item.image[0]}`}
           link={item?._id || ''}
         />
       ))}

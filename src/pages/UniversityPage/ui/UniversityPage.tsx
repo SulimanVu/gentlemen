@@ -11,7 +11,7 @@ import { Header } from '@/widgets/Header/Header';
 export const UniversityPage = () => {
   const { id } = useParams();
   const { data, isLoading, isError } = useUniversityServiceGetUniversityById({ id: id as string });
-console.log(data);
+  console.log(data);
 
   if (isLoading || isError || !data) {
     return <></>;
@@ -23,7 +23,7 @@ console.log(data);
       <Flex vertical gap={12} className={styles.universityInfo}>
         <Flex gap={12}>
           <ImageUpload
-            img={data.image ? `http://localhost:3010/${data.image[0]}` : ''}
+            img={data.image ? `https://gentlemen-back.onrender.com/${data.image[0]}` : ''}
             title="Изменить фото"
           />
           <ProjectInfoBlock data={data} title={data?.name || ''} />
